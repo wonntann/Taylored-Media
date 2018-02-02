@@ -1,0 +1,924 @@
+/*TRANSFORMS CSS AND MEDIA QUERIES AT BOTTOM*/
+
+/*-------------------BODY--------------------*/
+body {
+    max-width: 1366px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    background-color: #141414;
+}
+
+/*-------------------NAVBAR--------------------*/
+
+    /*LOGO*/
+#logo {
+    max-width: 300px !important;
+    float: left;
+    margin: 10px;
+    position: fixed;
+    z-index: 11;
+}
+
+    /*MENU*/
+#responsive-menu {
+    position:fixed;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 50px;
+    font-size: .8em;
+    z-index: 10;
+}
+
+#responsive-menu ul {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    list-style: none;
+    position: relative;
+    padding-left: 50%;
+}
+
+#responsive-menu ul li {
+    float: left;
+    padding: 30px 15px 0;
+}
+
+#responsive-menu ul li a {
+    text-align: left;
+    display: block;
+    padding: 0;
+}
+
+#responsive-menu ul ul {
+    background-color:rgba(0, 0, 0, 0.5);
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#responsive-menu ul ul li {
+    float: none;
+    padding:5px 0;
+    margin-top: 4px;
+}
+
+#responsive-menu a:hover {
+    color: #fa8d18;
+    text-decoration: underline;
+}
+
+#responsive-menu ul li:hover > ul {
+		display: block;
+	}
+
+#responsive-menu > ul:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+#responsive-menu a {
+     text-decoration: none;
+     color: #18b0fa;
+}
+
+
+/*-------------------HEADER--------------------*/
+header {
+    background-color: #252525;
+}
+
+
+/*-------------------CAROUSEL--------------------*/
+
+#wrapper {
+    height: 650px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #252525;
+}
+
+#slider {
+    position: relative;
+    height: 650px;
+    border: 1px solid black;
+    width: 100%;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 7px 1px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 7px 1px;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+#slider h1, #slider h2 {
+    z-index: 10;
+}
+
+#img1-h1 {
+    font-size: 4em;
+    font-weight: 100;
+}
+
+#img1-h2 {
+    font-size: 2em;
+    font-weight: 100;
+}
+
+#img2-h1 {
+    margin-top: -595px;
+}
+
+#img3-h1 {
+    text-align: right;
+    margin-right: 20px;
+}
+
+#img3-h2 {
+    text-align: right;
+    margin-right: 25px;
+}
+
+#img4-h1 {
+    margin-top: -500px;
+}
+
+#slider .img {
+    position: absolute;
+    max-width: 100%;
+    z-index: 1;
+}
+
+#slider .nav {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#slider .nav.previous {
+    left: 0;
+    background-image: url(../images/left-arrow.png);
+}
+
+#slider .nav.next {
+    right: 0;
+    background-image: url(../images/right-arrow.png);
+}
+
+.preview {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.preview img {
+    width: 100px;
+}
+
+.preview.previous-image {
+    left: 100px;
+}
+
+.preview.next-image {
+    right: 100px;
+}
+
+.features {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#content {}
+
+/*END CAROUSEL*/
+/*HEADER CALLS TO ACTION*/
+
+header h1 {
+    color: #fa8d18;
+    margin-top: -450px;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 100;
+}
+
+header h2 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 100;
+    margin-top: -50px;
+}
+/*-------------------ABOUT--------------------*/
+
+#gday {
+    width: 100%;
+    font-size: 4em;
+    font-weight: 100;
+    color: #fa8d18;
+    height: 90px;
+    background-color: #141414;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 60px;
+    text-align: center;
+}
+
+#welcome {
+    width: 100%;
+    font-size: 3em;
+    font-weight:100;
+    color: white;
+    height: 90px;
+    background-color: #141414;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/*-------------ABOUT US-----------*/
+.about-us {
+    width: 100%;
+    height: 700px;
+    padding-bottom: 50px;
+}
+
+#about_header {
+    width: 100%;
+    font-size: 3em;
+    font-weight: 100;
+    color: white;
+    height: 90px;
+    background-color: #fa8d18;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#about_content {
+    width: 100%;
+    height: 600px;
+}
+
+.about-us {
+    background-color: #fa8d18;
+}
+
+/*------ABOUT TABS-------*/
+
+ul.tab {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-left: none;
+    border-right: none;
+}
+
+ul.tab li {
+    float: left;
+    margin: 0 10 0 10;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+ul.tab li:first-child {
+    margin-left: 17%;
+}
+
+ul.tab li a {
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 2em;
+    font-weight: 300;
+    padding: 9px 10px;
+    transition: 0.3s;
+}
+
+ul.tab li a:hover {
+    color: #18b0fa;
+}
+
+.tabcontent {
+    width: 960px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    font-weight: 100;
+    text-align: left;
+}
+
+.tabcontent.active {
+  display: block;
+}
+
+.tabcontent.hide {
+  display: none;
+}
+
+#company, #mission {
+    font-size: 1.3em;
+}
+
+
+#about_header {
+    width: 100%;
+    font-size: 3em;
+    font-weight: 100;
+    color: white;
+    height: 90px;
+    background-color: #fa8d18;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 82px;
+    text-align: center;
+}
+
+#about_content {
+    width: 100%;
+    height: 600px;
+}
+
+/*-------------------SERVICES--------------------*/
+
+#services {
+    height: 550px;
+    background-color: #18B0FA;
+    padding-top: 82px;
+}
+
+#services h3 {
+    background-color: #18B0FA;
+    color: white;
+    font-size: 3em;
+    font-weight: 100;
+    text-align: center;
+}
+
+#ss_menu {
+    width: 960px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.ss_button {
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 2.2em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.ss_button.active {
+  display: block;
+}
+
+.ss_button:hover {
+    color: #fa8d18;
+}
+
+.ss_content {
+    color: #FFFFFF;
+    padding: 0 18px;
+    display: none;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+/*-------------------PORTFOLIO--------------------*/
+
+#portfolio {
+    clear: both;
+    width: 100%;
+    height: 710px;
+    overflow: hidden;
+}
+
+#portfolio_img {
+    width: 100%;
+}
+
+#portfolio_header {
+    width: 100%;
+}
+
+#portfolio_header_1 {
+    font-size: 4em;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    margin-top: -800px;
+    padding-top: 82px;
+}
+
+#portfolio_header_2 {
+    font-size: 3em;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    margin-top: -60px
+}
+
+#portfolio_click {
+    margin: 0 auto;
+    width: 180px;
+}
+
+#portfolio_click a{
+    font-size: 2em;
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+}
+
+#portfolio_click a:hover {
+    color: #fa8d18;
+    text-decoration: underline;
+}
+
+/*-------------------PORTFOLIO PAGE--------------------*/
+#laptop_img {
+    width: 100%;
+}
+
+#portfolio_header {
+    height: 750px;
+    overflow: hidden;
+}
+
+#portfolio_header h1 {
+    margin-top: -800px;
+    color: white;
+}
+
+/*LINKS*/
+#links {
+    max-width: 960px;
+    height: 450px;
+    margin: 0 auto;
+    padding-top: 10px;
+    background-color: white;
+}
+
+.linkbox {
+    float: left;
+    margin:10px;
+}
+
+.linkbox img {
+    width: 300px;
+    height: 200px;
+    background-size: contain;
+}
+
+#contactbox {
+    width: 300px;
+    height: 200px;
+    background-color: #141414;
+}
+
+#contactbox h1 {
+    width: 100%;
+    margin-top: 70px;
+    color: #fa8d18;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-align: center;
+}
+#contactbox a:link {
+    text-decoration: none;
+}
+
+#contactbox h1:hover {
+    color: #18b0fa;
+}
+
+
+/*-------------------TECHNOLOGIES--------------------*/
+
+#technologies {
+    clear: both;
+}
+
+#tech_h1 {
+    width: 100%;
+    font-size: 3em;
+    font-weight:100;
+    color: #18b0fa;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#technologies, #technologies2,{
+    align-content: center;
+}
+
+#technologies3 {
+    height: 200px;
+}
+
+#techhtml5 {
+    max-width: 10% !important;
+    height: auto;
+    margin-left: 33%;
+}
+
+#techjs {
+    max-width: 10% !important;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#techcss3 {
+    max-width: 10% !important;
+    height: auto;
+    margin-right: 25%;
+}
+
+#technodejs, #techless {
+    width: 20% !important;
+    height: auto;
+    margin: 5px;
+    float: none;
+}
+
+#technodejs {
+    margin-left: 28% !important;
+    margin-right: 20px;
+}
+
+
+
+#techbootstrap, #tech960gs {
+    width: 10% !important;
+    height: auto;
+    margin-top: 0;
+}
+
+#techbootstrap {
+    margin-left: 30% !important;
+}
+
+#tech960gs {
+    margin: 0 50px;
+}
+
+#techjquery {
+    width: 10% !important;
+    height: auto;
+}
+
+/*--------------------CONTACT--------------------*/
+
+#contactus {
+    color: #252525;
+    background-color: #FA8D19;
+    height: 350px;
+    margin-top: 0;
+    padding-top: 82px;
+}
+
+#contactus h3 {
+    font-size: 3em;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#contactus address,
+#contactus p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.fillout {
+    font-weight: 200;
+    background-color: #18B0FA;
+    padding: 10px 5px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.fillout a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.fillout a:hover {
+    text-decoration: underline;
+}
+
+/*----------------------FOOTER----------------------*/
+
+#footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+#footer_left {
+    max-width: 35%;
+    height: 160px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 17%;
+}
+
+    #tmlogo {
+    width: 235px !important;
+}
+
+footer p {
+    color: #fa8d18;
+    width: 250px;
+    margin-top: 5px;
+    font-size: .9em;
+    line-height: 1.7em;
+}
+
+footer a {
+    color: #fa8d18;
+}
+
+#footer_middle {
+    float: left;
+    max-width: 60%;
+    height: 180px;
+    padding-top: 20px;
+}
+
+#back_to_top {
+    width: 140px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #18b0fa;
+    margin: 0 auto;
+}
+
+#back_to_top a {
+    color: black;
+    font-weight:bold;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#footer_middle p {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#footer_right {
+    float: right;
+    width: 20%;
+    margin: 20px;
+}
+
+#footer_right img {
+    max-width: 20% !important;
+    height: auto !important;
+    float: right;
+    margin: 1%;
+}
+
+/*-------------------FAQ PAGE--------------------*/
+
+#faqs {
+    z-index: 1;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+#faqs h1 {
+    font-size: 3em;
+    font-weight: 200;
+    text-align: center;
+    color: #18b0fa;
+}
+
+#faqs h2 {
+    font-weight: 300;
+    color: #fa8d18;
+}
+
+#faqs p {
+    font-size: 1.1em;
+    font-weight: 200;
+    color: white;
+    padding: 10px
+}
+/*-------------------TRANSFORMS--------------------*/
+
+.linkbox,
+#technologies img,
+#technologies2 img,
+#technologies3 img {
+    transition: all .3s ease-in-out;
+}
+
+.linkbox:hover,
+#technologies img:hover,
+#technologies2 img:hover,
+#technologies3 img:hover {
+    -ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Safari */
+    transform: scale(1.1,1.1);
+}
+
+/*----------MEDIA QUERIES----------*/
+
+/*PRINT*/
+@media print {}
+
+/*STANDARD*/
+@media screen and (max-width:1365px){
+    #responsive-menu {width: 100%;}
+}
+
+/*STANDARD*/
+@media screen and (max-width:1120px){
+  /*ABOUT*/
+  ul.tab li { max-width: 80%;}
+  ul.tab li:first-child {
+    margin-left: 9%;
+}
+
+/*SMALLER DESKTOP/TABLET LANDSCAPE*/
+@media screen and (max-width:960px) {
+    /*NAV*/
+    #responsive-menu ul li {float: left; padding: 30px 7px 0;
+}
+
+    /*HEADER*/
+    #wrapper, #wrapper img {max-width: 960px;}
+    #wrapper {height: 500px; overflow: hidden;}
+    #wrapper h1, #wrapper h2 {}
+
+    /*ABOUT*/
+    ul.tab li:first-child {margin-left: 7%;}
+    .tab li {font-size: .9em;max-width: 60%;}
+    .tabcontent {max-width: 850px;}
+    .tabcontent p {font-size: .9em; padding: 10px;}
+
+    /*SERVICES*/
+    .ss_content {max-width: 900px; text-align: center; font-size: 1.4em;}
+
+    /*PORTFOLIO*/
+    #portfolio { height: 500px;}
+    #portfolio_header_1 {margin-top: 600px;font-size: 3em;}
+    #portfolio_header_2 {margin-top: 1px; font-size: 2em;}
+
+    /*TECHNOLOGIES*/
+    #technologies {margin-top: -30px;}
+    #tech_h1 {font-size: 2.5em;}
+
+    /*FOOTER*/
+    #footer_left {margin-right: 10%}
+    #footer_middle {max-width: 30%;padding-top: 20px;}
+    #footer_middle p {font-size: .7em;}
+}
+
+/*SMALLER DESKTOP/TABLET LANDSCAPE*/
+@media screen and (max-width:900px) {
+  /*ABOUT*/
+  .tab li {font-size: .75em;max-width: 50%;}
+  .tabcontent {max-width: 850px;}
+  .tabcontent p {font-size: .9em; padding: 10px;}
+}
+
+/*TABLET PORTRAIT*/
+@media screen and (max-width:768px) {
+    /*NAV*/
+
+    /*HEADER*/
+    #wrapper, #wrapper img {max-width: 768px;}
+    #wrapper {height: 400px; overflow: hidden;}
+    #wrapper h1, #wrapper h2 {display: none;}
+
+    /*ABOUT*/
+    ul.tab li:first-child {margin-left: 5%;}
+    .tab li {font-size: .6em;}
+    .tabcontent {max-width: 720px;}
+    .tabcontent p {font-size: .9em; padding: 10px;}
+
+    /*SERVICES*/
+    .ss_button {width: 748px; text-align: center;}
+    .ss_content {max-width: 720px; text-align: center; font-size: 1.4em;}
+
+    /*PORTFOLIO*/
+    #portfolio { height: 400px;}
+    #portfolio img {max-width:768px;}
+    #portfolio_header_1 {margin-top: -500px;font-size: 2.5em;}
+    #portfolio_header_2 {margin-top: -20px; font-size: 1.5em;}
+
+    /*TECHNOLOGIES*/
+    #technologies {margin-top: -30px;}
+    #tech_h1 {font-size: 2.5em;}
+
+    /*CONTACT*/
+    #contactus h3 {font-size: 2.5em;}
+    #contactus address {font-size: 1.5em;}
+    #contactus p {font-size: 1.5em;}
+
+    /*FOOTER*/
+    #footer_left {max-width: 25%; margin-right: 7%;}
+    #tmlogo {max-width: 80%;}
+    #footer_left p {font-size: .7em;}
+    #footer_middle {max-width: 30%;padding-top: 20px;}
+    #footer_middle p {font-size: .7em;}
+    #footer_right {width: 25%;}
+}
+
+/*MOBILE LANDSCAPE*/
+@media screen and (max-width:600px) {
+    /*NAV*/
+    #responsive-menu {height: 80px; float: left;}
+    #responsive-menu ul {clear: both; margin-right: 15%}
+    #responsive-menu ul li {margin-top: 25px;}
+    #logo {margin: 0 0 0 26%;}
+
+    /*HEADER*/
+    #wrapper, #wrapper img {max-width: 600px;}
+    #wrapper {height: 300px;}
+    #gday {font-size: 3em; height: 50px;}
+    #welcome {font-size: 2em; height: 50px;}
+
+    /*ABOUT*/
+    ul.tab li:first-child {margin-left: 4%;}
+    .tab li {font-size: .4em;}
+    .tabcontent {max-width: 560px;}
+    .tabcontent p {font-size: .8em; padding: 10px;}
+
+    /*SERVICES*/
+    #services {height: 500px;}
+    .ss_button {width: 600px; text-align: center;}
+    .ss_content {max-width: 540px; text-align: center; font-size: 1em;}
+
+    /*PORTFOLIO*/
+    #portfolio_img {max-width: 600px;}
+    #portfolio_header_1 {margin-top: -350px;}
+    #portfolio_click {margin-top: 50px;}
+
+    /*TECHNOLOGIES*/
+    #technologies3 {height: 100px;}
+}
+
+/*MOBILE PORTRAIT*/
+@media screen and (max-width:320px) {
+    #responsive-menu {background-color: green;}
+    /*NAV*/
+    #responsive-menu {height: 60px;}
+    #responsive-menu ul {margin-right:0px; font-size: .7em;}
+    #responsive-menu ul li {margin-top: -30px;}
+    #responsive-menu ul ul {font-size: 1em;}
+
+    /*HEADER*/
+    #wrapper {display: none;}
+    #gday {padding-top: 80px}
+    #welcome {font-size: 1.5em;}
+
+    /*ABOUT*/
+    #about {height: 800px; background-color: #fa8d18;}
+    ul.tab li:first-child {margin-left: 1%;}
+    .tab li {font-size: .4em; text-align: center;}
+    .tabcontent {max-width: 300px;}
+    .tabcontent p {font-size: .6em; padding: 10px;}
+
+    /*SERVICES*/
+    #services {height: 400px;}
+    #services h3 {font-size: 2em;}
+    .ss_button {width: 300px; text-align: center; font-size: 1.5em;}
+    .ss_content {max-width: 280px; text-align: center; font-size: .8em; margin-left: 5px; padding: 5px;}
+
+    /*PORTFOLIO*/
+    #portfolio { height: 400px;}
+    #portfolio img {max-width:320px;}
+    #portfolio_header_1 {display: none;}
+    #portfolio_header_2 {margin-top: -200px; font-size: 1.5em;}
+    #portfolio_click {margin-top: 80px;}
+
+     /*TECHNOLOGIES*/
+    #technologies, #technologies2, #technologies3 {display: none;}
+
+    /*CONTACT*/
+    #contactus {margin-top: -185px; height: 250px;}
+    #contactus h3 {font-size: 2em;}
+    #contactus address {font-size: 1em;}
+    #contactus p {font-size: 1em;}
+
+    /*FOOTER*/
+    #footer_left {display: none;}
+    #footer_right {display: none;}

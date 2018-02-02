@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta lang="en-us">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link href="/css/contact.css" rel="stylesheet">
+</head>
+
+<body>
+    <!----------NAVBAR---------->
+    <nav id="nav_main">
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+        <ul>
+            <li><a href="/index.html#about">ABOUT US &#9660;</a>
+                <ul>
+                    <li><a href="/index.html#about">COMPANY OVERVIEW</a></li>
+                    <li><a href="/index.html#technologies">TECHNOLOGIES</a></li>
+                </ul>
+                <li><a href="/index.html#services">SERVICES </a></li>
+                <li><a href="/index.html#portfolio">PORTFOLIO</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contactus">CONTACT US &#9660;</a>
+                    <ul>
+                        <li><a href="#contactus">INQUIRY</a></li>
+                        <li><a href="https://www.paypal.com/au/cgi-bin/webscr?cmd=_flow&SESSION=A59x7n_nfJIub6U9_qqLQnDquNcpl-Fz1EQdmpUncDKBL_Y_UR3GSyflc8u&dispatch=50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b0819848475f0da5465a2ea26eae033cbe3bda">INVOICE</a></li>
+                    </ul>
+                </li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <header>
+            <img src="/images/contactheader.jpg" alt="">
+            <div class="intro">
+                <h1>OUR JOURNEY BEGINS HERE</h1>
+                <h2>LET US KNOW HOW WE CAN HELP</h2>
+            </div>
+        </header>
+
+        <section class="contactform">
+            <h1>CONTACT US</h1>
+            <h3>HAVE A BURNING QUESTION? WANT TO SCHEDULE A CONSULTATION? FEEL FREE TO FILL OUT THE FORM BELOW!<br>
+            TO PAY AN INVOICE, PLEASE FOLLOW THE LINK AT THE BOTTOM OF THE PAGE.</h3>
+            <form name="contact_form" action="subscribe.php" method="post">
+                <fieldset>
+                    <p><em>Note: Fields highlighted in red are required.</em></p>
+                    <label for="name">COMPANY NAME</label>
+                    <br>
+                    <input type="text" name="companyname" maxlength="30" autofocus>
+                    <br>
+                    <label for="name">CONTACT NAME</label>
+                    <input type="text" name="name" required>
+                    <br>
+                    <label for="address">ADDRESS</label>
+                    <input type="text" name="address">
+                    <br>
+                    <label for="tel">PHONE</label>
+                    <input type="tel" name="phonemumber" maxlength="20" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required title="Ex: 555-555-5555">
+                    <br>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" maxlength="30" placeholder="name@domain.com" required>
+                    <br>
+                    <label for="message">MESSAGE</label>
+                    <textarea placeholder="ENTER YOUR MESSAGE">
+                    </textarea>
+                    <br>
+                    <label for="contact">PREFERRED FORM OF CONTACT</label>
+
+                    <input type="checkbox" name="email" value="email" id="myemail">EMAIL
+                    <br>
+
+
+                    <input type="checkbox" name="phone" value="phone" id="mytel">PHONE
+                    <br>
+
+
+                    <input type="checkbox" name="mail" value="mail" id="mymail">MAIL
+                    <br>
+
+
+                    <label for="help"> WHAT WOULD YOU LIKE HELP WITH?</label>
+                    <select name="help" size="2" multiple required>
+                        <option value="web">GET ME ON THE WEB</option>
+                        <option value="domain">I WANT A DOMAIN</option>
+                        <option value="host">I NEED YOU TO HOST FOR ME </option>
+                    </select>
+                    <br>
+                    <label for="find">HOW DID YOU FIND US?</label>
+                    <select name="how_you_found_us">
+                        <option value="friend">FRIEND</option>
+                        <option value="internet">INTERNET SERACH</option>
+                        <option value="ad">AD</option>
+                        <option value="other">OTHER</option>
+                    </select>
+                    <br>
+                    <label for="newsletter">WOULD YOU LIKE TO BE ADDED TO OUR NEWSLETTER?</label>
+                    <br>
+
+                    <input type="radio" name="newsletter" value="yes" checked>YES, I WANT TO BE UP-TO-DATE!
+                    <br>
+
+                    <input type="radio" name="newsletter" value="no">NO, I'LL MISS OUT.
+                    <br>
+
+                    <p>
+                        <input type="submit" name="submit" value="SUBMIT FORM">
+                    </p>
+                </fieldset>
+            </form>
+
+            <h3>TO PAY AN INVOICE </h3>
+
+            <a href="https://www.paypal.com/au/cgi-bin/webscr?cmd=_flow&SESSION=A59x7n_nfJIub6U9_qqLQnDquNcpl-Fz1EQdmpUncDKBL_Y_UR3GSyflc8u&dispatch=50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b0819848475f0da5465a2ea26eae033cbe3bda" target="_blank" class="pay">CLICK HERE</a>
+            <br>
+        </section>
+        <!----------FOOTER---------->
+        <footer id="footer">
+            <div id="footer_left">
+                <img id="tmlogo" src="images/logo_alt.png">
+                <p>PO BOX 3347, PUTNEY, N.S.W. 2112
+                    <br> (02) 9816 4896
+                    <br>
+                    <a href="mailto:enquiry@tayloredmedia.com.au">enquiry@tayloredmedia.com.au</a></p>
+            </div>
+            <div id="footer_middle">
+                <div id="back_to_top">
+                    <a href="#top">BACK TO TOP</a>
+                </div>
+                <p>Copyright &copy; 2016 Taylored Media. All Rights Reserved.</p>
+            </div>
+            <div id="footer_right">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/social_fb.png" alt="facebook"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="images/social_linkdin.png" alt="linkedin"></a>
+                <a href="www.twitter.com" target="_blank"><img src="images/social_twitter.png" alt="twitter"></a>
+                <a href="https://plus.google.com/" target="_blank"><img src="images/social_gplus.png" alt="google_plus"></a>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

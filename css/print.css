@@ -1,0 +1,14 @@
+a,
+img#logo,
+nav#responsive-menu,
+header,
+section#about,
+section#services,
+section#portfolio,
+section#technologies,
+section#technologies2,
+section#technologies3,
+p.fillout,
+footer#footer {
+    display: none;
+}
