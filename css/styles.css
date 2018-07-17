@@ -6,18 +6,20 @@
 
 body {
 
-    max-width: 1366px;
+    max-width: 1155px;
 
     font-family: 'Roboto', sans-serif;
 
     margin: 0 auto;
 
     background-color: #141414;
+    display: block;
 
 }
 
-
-
+.wrapper {
+    max-width: 1155px;
+}
 /*-------------------NAVBAR--------------------*/
 
 
@@ -38,31 +40,55 @@ body {
 
 }
 
-
+ /*MOBILE MENU*/
+/*----- Toggle Button -----*/
+.topnav .icon {
+    display: none;
+}
+.topnav li {
+    display: block;
+}
 
     /*MENU*/
+    nav:after {
+        content:"";
+        display:table;
+        clear:both;
+    }
 
 #responsive-menu {
 
     position:fixed;
 
-    background-color:rgba(0, 0, 0, 0.5);
-
-    width: 100%;
-
-    height: 50px;
+    top: 0%;
+    
+    height: 70px;
+    
+    background-color:rgba(0, 0, 0, 0.5); 
 
     font-size: .8em;
 
     z-index: 10;
+    width: 100%;
+max-width: 1155px;
+}
+
+#menu-toggle {
+    
+    display: none;
+
+}
+
+.label-toggle {
+    
+    display: none;
 
 }
 
 
-
 #responsive-menu ul {
-
-    margin: 0;
+    
+    margin-top: -5px;
 
     padding: 0;
 
@@ -834,7 +860,7 @@ ul.tab li a:hover {
 
     text-align: center;
 
-    margin-top: -800px;
+    margin-top: -700px;
 
     padding-top: 82px;
 
@@ -914,7 +940,7 @@ ul.tab li a:hover {
 
 #portfolio_header h1 {
 
-    margin-top: -700px;
+    margin-top: -800px;
 
     color: white;
 
@@ -1489,14 +1515,11 @@ footer a {
 
 
 /*STANDARD*/
-
-@media screen and (max-width:1365px){
-
-    #responsive-menu {width: 100%;}
-
+@media screen and (max-width: 1177px) {
+    .wrapper {
+        max-width: 100%;
+    }
 }
-
-
 
 /*STANDARD*/
 
@@ -1594,18 +1617,67 @@ footer a {
 
   .tabcontent {max-width: 850px;}
 
-  .tabcontent p {font-size: .9em; padding: 10px;}
+  .tabcontent p {font-size: .9em; padding: 10px; max-width: 95%;}
 
 }
 
+/*TABLET PORTRAIT*/
 
+@media screen and (max-width:871px) {
+
+    /*ABOUT*/
+  .tabcontent p {
+      max-width: 90%;
+  }
+
+}
+
+/*TABLET PORTRAIT*/
+
+@media screen and (max-width:800px) {
+
+    /*ABOUT*/
+  .tabcontent p {
+      max-width: 80%;
+  }
+
+}
 
 /*TABLET PORTRAIT*/
 
 @media screen and (max-width:768px) {
 
     /*NAV*/
+  /*Make dropdown links appear inline*/
+  #responsive-menu {
+	position:relative;
+	display:inline-block;
+    width:100%;
+	padding:10px 18px;
+	box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+	border-radius:3px;
+	background:#303030;
+  }
+#responsive-menu.topnav ul {
+	visibility: hidden;
+}
 
+.topnav a.icon {
+    display: block;
+    width: 80%;
+  }
+ nav#responsive-menu.topnav.responsive ul {
+    content: '';
+    display: block;
+    position: static; 
+    list-style-type: none;
+    text-align: center;
+    visibility: visible;
+    clear: left;
+  }
+#logo {
+    margin: 0 auto;
+}
 
 
     /*HEADER*/
@@ -1616,6 +1688,10 @@ footer a {
 
     #wrapper h1, #wrapper h2 {display: none;}
 
+    #slider {
+        padding-top: 0px;
+    }
+
 
 
     /*ABOUT*/
@@ -1624,17 +1700,23 @@ footer a {
 
     .tab li {font-size: .6em;}
 
-    .tabcontent {max-width: 720px;}
+    .tabcontent {max-width: 700px;}
 
     .tabcontent p {font-size: .9em; padding: 10px;}
 
 
 
     /*SERVICES*/
+    .ss_button {
+    max-width: 40%;
+}
+.ss_button p {
+    max-width: 20%;
+}
 
     .ss_button {width: 748px; text-align: center;}
 
-    .ss_content {max-width: 720px; text-align: center; font-size: 1.4em;}
+    .ss_content {max-width: 35% !important; text-align: center; font-size: 1.4em;}
 
 
 
@@ -1683,7 +1765,16 @@ footer a {
     #footer_right {width: 25%;}
 
 }
+/*TABLET PORTRAIT*/
 
+@media screen and (max-width:787px) {
+
+    /*ABOUT*/
+  .tabcontent p {
+      max-width: 90%;
+  }
+
+}
 
 
 /*MOBILE LANDSCAPE*/
@@ -1698,7 +1789,9 @@ footer a {
 
     #responsive-menu ul li {margin-top: 25px;}
 
-    #logo {margin: 0 0 0 26%;}
+    .topnav a.icon {
+        top: -80px;
+    }
 
 
 
@@ -1752,13 +1845,32 @@ footer a {
 
 }
 
+/*MOBILE LANDSCAPE*/
 
+@media screen and (max-width:320px) {
+
+    /*NAV*/
+
+#logo {
+    margin: 0 auto;
+}
+
+}
+
+/*MOBILE LANDSCAPE*/
+
+@media screen and (max-width:392px) {
+
+    /*NAV*/
+
+#header {
+    display: none;
+}
+}
 
 /*MOBILE PORTRAIT*/
 
 @media screen and (max-width:320px) {
-
-    #responsive-menu {background-color: green;}
 
     /*NAV*/
 
@@ -1774,7 +1886,7 @@ footer a {
 
     /*HEADER*/
 
-    #wrapper {display: none;}
+    #wrapper, #img1-h1, #img1-h2 {display: none;}
 
     #gday {padding-top: 80px}
 
